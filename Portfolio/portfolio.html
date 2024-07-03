@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-v"></i>
+                    <div class="logo-text">VR Krishnamacharyulu</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <!-- <li><a href="#">Portfolio</a></li> -->
+                        <li><a href="RAGHU resume.pdf">Resume</a></li>
+                        <li><a href="https://www.hackerrank.com/profile/raghuperiyala201">Hacker Rank</a></li>
+                        <li><a href="mailto:raghunandanperiyala@gmail.com">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="Drive ready.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>VR Krishnamacharyulu</h1>
+                    <p> As a 3rd-year undergraduate student specializing in CSE, my
+                        career objective is to leverage my programming proficiency in
+                        languages such as C++, and Python and SQL queries along with my
+                        knowledge of <b>web development</b> technologies including
+                        HTML, CSS, and JavaScript to secure a challenging role in
+                        software development and to contribute effectively to
+                        innovative projects and continually enhance my skills in the
+                        dynamic field of technology.Currently I am completing my certification
+                        in <b>Multi cloud with Devops</b>
+                    </p>
+
+                    <div class="btn-group">
+                       <!-- <a href="#" class="btn active">Download CV</a> -->
+                       <a href="RAGHU resume.pdf" class="btn active">My Resume</a>
+                       <!-- <a href="#" class="btn">Contact</a> -->
+                       <a href="mailto:raghunandanperiyala@gmail.com" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/raghu.msd.39?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/vr-krishnamacharyulu-periyala-39b7a1314/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_raghu_nandan_20?igsh=MnYyeTB6djRlaHl0"><i class="fa-brands fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-dribbble"></i></a> -->
+                        <!-- <a href="#"><i class="fa-brands fa-pintrest"></i></a> -->
+                        <a href="https://github.com/VRKRISHNAMACHARYULU"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            // strings:["UX Designer","Web Developer"],
+            strings:["Web Developer","Multi Cloud Trainee","Data Engineer"],
+            typedSpeed:5,
+            backSpeed:60,
+            loop:true
+        })
+     </script>
+</body>
+</html>
